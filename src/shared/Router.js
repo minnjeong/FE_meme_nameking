@@ -6,11 +6,14 @@ import DetailPage from "../pages/DetailPage"
 import PostPage from "../pages/PostPage"
 import SignupPage from "../pages/SignupPage"
 
+
+
+
 const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainPage />}/>
+                <Route path="" element={<MainPage />}/>
                 <Route path="/login" element={<LoginPage />}/>
                 <Route path="/signup" element={<SignupPage />}/>
                 <Route path="/detail" element={<DetailPage />}/>
