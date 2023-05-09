@@ -1,8 +1,13 @@
 import React from 'react'
+import Full from '../components/FullPage/Full'
+
 
 function FullPage() {
   return (
-    <div>MainPage</div>
+    <div>
+      <Full/>
+    </div>
+    
   )
 }
 
