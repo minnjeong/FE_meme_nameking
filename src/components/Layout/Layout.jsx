@@ -15,6 +15,7 @@ function Layout({children}) {
   
   const StLayout = styled.div`
     height : calc(100vh - 90px);
-    background-color : #e4e3eb;
+    background-color : #f2f2f2;
     padding : 25px;
+    display: flex;
   `
