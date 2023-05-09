@@ -1,15 +1,16 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Header() {
-
+  const navigate = useNavigate()
   
   return (
     <StContainer>
-      <div>내가 짤명왕</div>
+      <Sth1 onClick={() => navigate("/")}>내가 짤명왕</Sth1>
       <div>
-        <button>로그인</button>
-        <button>회원가입</button>
+        <StButton onClick={() => navigate("/login")}>로그인</StButton>
+        <StButton onClick={() => navigate("/signup")}>회원가입</StButton>
       </div>
     </StContainer>
   )
@@ -21,7 +22,19 @@ justify-content: space-between;
 align-items: center;
 display: flex;
 height: 90px;
-background-color: #e4e3eb;
+background-color: #f2f2f2;
 padding: 0 20px;
-border: 1px solid #c8c3c3;
+/* border: 1px solid #c8c3c3; */
 `;
+
+const Sth1 = styled.h1`
+font-size : 40px;
+padding : 15px 0px 0px 20px;
+`
+
+const StButton = styled.button`
+font-size : 20px;
+border-radius : 10px;
+margin : 15px 20px 10px 10px;
+cursor: pointer;
+`
